@@ -1,0 +1,25 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Processed datasets
+data/processed/
+
+# Model files
+# Keep models/model.joblib tracked as required by the handbook
+
+# Temporary files
+.DS_Store
+.pytest_cache/

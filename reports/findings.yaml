@@ -1,0 +1,59 @@
+
+
+group_id: "G216"         
+problem_id: "MP278"
+
+data_issues:
+  
+  leaking_column:
+    present: true
+    column: duration_from_phone_bill          
+  unit_mixup:
+    present: false
+    column: null          
+    group_value: null      
+    factor: null           
+  sentinel_value:
+    present: false
+    column: null
+    value: null           
+    count: null            
+  duplicate_rows:
+    present: true
+    count: 51          
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null      
+    end_date: null        
+  target_typos:
+    present: true
+    count: 15          
+  spelling_variants:
+    present: false
+    column: null
+    true_levels: null     
+
+tracking:
+  experiment_name: "MP278-Helpline-Call-Length"
+  best_run_id: "9c6b2a36d53b431aa4ebb91070d84842"       
+  registered_model_name: "mp278-helpline-call-length"
+  champion_version: 2
+
+monitoring:
+  psi:                     
+    queue_wait_sec: 0.0388
+    agent_exp_months: 0.0179
+    previous_calls: 4.0997
+    issue_count: 0.0218
+    hour: 0.0237
+    caller_age: 0.0265
+  most_drifted_feature: previous_calls
+  mae_by_group:           
+    'Team Alpha': 7.9179
+    'Team Beta': 2.6812
+    'Team Gamma': 2.5011
+  worst_served_group: 'Team Alpha'
+  mae_v1_on_check: 4.4751   
+  mae_v2_on_check: 1.8312   
+  decision: "promote_v2"          
